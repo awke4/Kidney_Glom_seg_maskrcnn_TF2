@@ -27,7 +27,7 @@ Kidney_Glomerulus_seg_maskrcnn/
 │       ├── batch_infer_kidney_glom.py      \ 批次推論
 │       └── evaluate_kidney_glom.py         \ 評估指標
 │
-├── Kidney_Glomerulus_seg_maskrcnn.ipynb   \ Colab Notebook
+├── Kidney_Glomerulus_seg_maskrcnn.ipynb    \ Colab Notebook
 │
 ├── requirements_no_tf.txt                  \ 不含 TensorFlow 的依賴(目前暫時不使用該requirements)
 │
@@ -35,11 +35,15 @@ Kidney_Glomerulus_seg_maskrcnn/
 |   ├── images/
 |   └── annotations/
 |
-└── datasets/                               \ 完整資料集 (28 份)
-    └── kidney_glom/
-        ├── images/
-        └── annotations/
-
+|── datasets/                               \ 完整資料集 (28 份)
+|   └── kidney_glom/
+|       ├── images/
+|       └── annotations/
+|
+└──results/
+    └──weight/mask_rcnn_kidney_glom_0030.h5 \提供的訓練完權重
+    └──datasets/ ...png                     \使用mask_rcnn_kidney_glom_0030.h5推論的結果
+    └──confusion_matrix.png                 \產生的混淆矩陣
 ```
 
 ---
