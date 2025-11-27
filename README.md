@@ -76,7 +76,8 @@ dataset/
 
 * **coco資料集：** 自行下載後放在主目錄Kidney_Glom_seg_maskrcnn_TF2下，[下載連結](https://github.com/matterport/Mask_RCNN/releases)
 
-訓練流程包含 **Phase 1: Train Heads** 和 **Phase 2: Fine-tune all layers**。模型會儲存在 `logs_kidney_tf2/` 下，這裡提供兩種範例:
+訓練流程包含 **Phase 1: Train Heads** 和 **Phase 2: Fine-tune all layers**。模型會儲存在 `logs_kidney_tf2/` 下，
+參數可自行調整，這裡提供兩種範例:
 
 ### 1. 使用 COCO 初始化權重 + 完整資料集
 
